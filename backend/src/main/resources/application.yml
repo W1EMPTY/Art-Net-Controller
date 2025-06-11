@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:sqlite:db/database.db
+    driver-class-name: org.sqlite.JDBC
+
+  thymeleaf:
+    cache: false
+
+artnet:
+  subNet: 0
+  universe: 0
+  ip: 192.168.3.95
+
+database:
+  url: jdbc:sqlite:db/database.db
+
+mybatis:
+  #  mapper-locations: classpath:com/MetaLive/ArtNetController/Mapper/*.xml
+  type-aliases-package: com.MetaLive.ArtNetController.model
+  configuration:
+    map-underscore-to-camel-case: true
